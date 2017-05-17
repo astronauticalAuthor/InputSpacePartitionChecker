@@ -1,0 +1,53 @@
+public class test.NewClass extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        test.NewClass r0;
+
+        r0 := @this: test.NewClass;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+
+        r0 := @parameter0: java.lang.String[];
+
+        staticinvoke <test.NewClass: void aisbetter()>();
+
+        goto label1;
+
+     label1:
+        return;
+    }
+
+    public static void aisbetter()
+    {
+        java.io.PrintStream $r0;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Hello world from a");
+
+        return;
+    }
+
+    public static void bisbetter(java.lang.String)
+    {
+        java.lang.String r0;
+        java.io.PrintStream $r1;
+
+        r0 := @parameter0: java.lang.String;
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("Hello world from b");
+
+        return;
+    }
+}
